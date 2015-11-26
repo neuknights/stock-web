@@ -1,0 +1,8 @@
+<html>
+	<head>
+		<title>股票后台管理系统</title>
+    </head>
+	<body >
+		$screen_content
+    </body>
+</html>
