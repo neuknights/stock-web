@@ -14,12 +14,6 @@ public class IndexController {
 	@RequestMapping("/index.html") 
 	public String index() {
 		
-//		ModelAndView mav = new ModelAndView("/main");
-//		String url = "/login";
-//		Map<String,String> map = new HashMap<String,String>();
-//		map.put("layout", "true");
-		
-//    	return new ModelAndView("main","pro","value1");
-    	return "login";
+    	return "index";
 	}
 }

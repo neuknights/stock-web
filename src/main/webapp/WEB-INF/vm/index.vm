@@ -1,0 +1,45 @@
+<form id="logFrm" name="loginForm">
+	<div class="item">
+		<div class="farea">
+			用户名   <input style="margin-left: 10px" type="type" name="uname" id="uname" class="input">
+	    </div>
+    </div>
+	
+	<div class="item" style="margin-top: 10px">
+		<div class="farea">
+			密码       <input style="margin-left: 20px" type="password" name="password" id="password" class="input">
+	    </div>
+    </div>
+	
+	<div class="item" style="margin-top: 20px">
+        <input class="btn btn-default" type="button" value="login" onclick="login()">
+		<input style="margin-left: 20px"class="btn btn-default" type="button" value="logout">
+    </div>
+</form>
+<script type="text/javaScript">
+	
+	function login() {
+		var name = $("#uname").val();
+		var pwd = $("#password").val();
+		
+		$.ajax({
+			type: 'post',
+			url:'login.html',
+			data: {
+				"name": name,
+				"password": pwd,
+			},
+			
+			dataType: 'json',
+			success: function() {
+				if(result.result = true) {
+					alert('login success!');
+					window.location.ref = "/main.html";
+				}else {
+					alert ('login error!');
+				}
+			}
+		});
+	}
+</script>
+	
