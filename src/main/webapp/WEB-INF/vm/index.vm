@@ -1,3 +1,7 @@
+<head>
+	<!--script language="javascript" type="text/javascript" src="/resources/js/"></script-->
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
 <form id="logFrm" name="loginForm">
 	<div class="item">
 		<div class="farea">
