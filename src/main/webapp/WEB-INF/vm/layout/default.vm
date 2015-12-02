@@ -1,8 +1,45 @@
-<html>
-	<head>
-		<title>股票后台管理系统</title>
-    </head>
-	<body >
-		$screen_content
+#* @vtlvariable name="receiverName" type="java.lang.String" *#
+#* @vtlvariable name="screen_content" type="java.lang.String" *#
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    #parse("layout/head.vm")
+	<body  id="mainframe">
+		<div class="page-header">
+    <div id="header">
+        <div id="sys-infor">
+             <span id="loginbar"></span>
+        </div>
+        <div id="logo">
+            <a title="Stock Management" href="#">Stock</a>
+        </div>
+        <div id="nav">
+            <ul>
+                <li class="curr"><a href="http://baidu.com"><span>搜索</span></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div  class="main clearfix">
+    <div class="page-left" style="float:left;">		
+        <div id="menu" style="float:left;">
+            #parse("layout/left.vm")
+        </div>		
+		<div class="resizer" data="open">
+    		<div class="opt">
+    			<div class="indicator">
+    				<i></i>
+    			</div>
+    		</div>
+		</div>		
+    </div>
+    <div id="main" class="wrap">
+        $screen_content
+    </div>
+    #parse("layout/bottom.vm")
+    </div>
+</div>
     </body>
 </html>
+

@@ -1,0 +1,25 @@
+<div id="1" class="lev1 open">
+	<a href="javascript:void(0);" class="tit">
+        <i class="i-item">&nbsp;</i>
+        <span>Stock Management</span>
+	</a>
+	<div class="lev2 open">
+        <a href="/example/eg1.html"><i>&nbsp;</i><span>sample1</span></a>
+		<a href="/example/eg2.html"><i>&nbsp;</i><span>sample2</span></a>
+		<a href="/example/eg3.html"><i>&nbsp;</i><span>sample3</span></a>
+			
+    </div>
+</div>
+	
+<div id="2" class="lev1 open">
+	<a href="javascript:void(0);" class="tit">
+        <i class="i-item">&nbsp;</i>
+        <span>Title2</span>
+	</a>
+	<div class="lev2 open">
+        <a href="/example/eg1.html"><i>&nbsp;</i><span>sample1</span></a>
+		<a href="/example/eg2.html"><i>&nbsp;</i><span>sample2</span></a>
+		<a href="/example/eg3.html"><i>&nbsp;</i><span>sample3</span></a>
+			
+    </div>
+</div>
